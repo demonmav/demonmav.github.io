@@ -7,6 +7,21 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+body .container {
+  width: 50rem;
+  height: 30rem;
+  font-size: 3rem;
+  font-size-adjust: 0.5;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
 body canvas {
   color: white;
   background-color: #282828;

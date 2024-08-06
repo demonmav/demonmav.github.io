@@ -109,6 +109,9 @@ class circles_Yard {
         this.draw = () => {
             m.beginPath();
             m.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+            m.lineWidth = 3;
+            m.strokeStyle = "whitesmoke";
+            m.stroke();
             m.fillStyle = this.color;
             m.fill();
         };
@@ -154,7 +157,7 @@ for (let i = 0; i < 20; i++) {
     dx = 8;
     dy = 8;
     radius = 30;
-    color = "#ffffff";
+    color = "tomato";
     mass = 10;
 
 
