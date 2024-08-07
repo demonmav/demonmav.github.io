@@ -194,3 +194,7 @@ function animate(t) {
 };
 
 animate();
+
+
+
+// the responsive navbar

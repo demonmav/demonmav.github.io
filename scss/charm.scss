@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     height: 100dvh;
     width: 100dvw;
@@ -6,25 +12,77 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Comic Sans MS";
 
-    .container {
-        width: 50vw;
-        height: 30vh;
-        font-size: 3vw;
-        font-size-adjust: 0.5;
-        background-color: whitesmoke;
+    // the responsive navbar
+    nav {
         position: absolute;
+        z-index: 80;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        background-color: whitesmoke;
+        width: 30rem;
+        height: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 0.5rem;
+        border-radius: 0.6rem;
+
+        ul {
+            display: flex;
+            width: 30rem;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                position: relative;
+                list-style: none;
+
+                a {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+
+                    .icon {
+                        position: relative;
+                        display: block;
+                        transition: 0.5s;
+                        color: #282828;
+                        font-size: 1.4rem;
+                        line-height: 5rem;
+                    }
+                }
+            }
+        }
     }
+
+
+
 
     canvas {
         color: white;
         background-color: #282828;
     }
+}
+
+
+nav ul li:hover a .icon {
+    transform: translateY(-35px);
+}
+
+nav ul li a .text {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+nav ul li:hover a .text {
+    transition: 0.5s;
+    position: absolute;
+    opacity: 1;
+    transform: translateY(10px);
 }
