@@ -69,21 +69,21 @@ function resolveCollision(particle, otherParticle) {
 
 
 // Grab the canvas
-const canvas_back = document.querySelector("canvas.back");
+const canvas = document.querySelector("canvas");
 
 var w = window.innerWidth;
 var h = window.innerHeight;
 
 function resize_canvas() {
-    canvas_back.width = w;
-    canvas_back.height = h;
+    canvas.width = w;
+    canvas.height = h;
 };
 
 resize_canvas();
 
 window.addEventListener("resize", resize_canvas);
 
-const m = canvas_back.getContext("2d");
+const m = canvas.getContext("2d");
 
 // Getting the distance in betweeen circles
 // with the help of pythegoreon theorem
