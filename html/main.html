@@ -1,19 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>Github</title>
-    <link rel="stylesheet" href="../src/charm_out.css">
-    <link rel="stylesheet" href="../scss/charm.css">
+    <link rel="stylesheet" href="../src/charm_out.css" />
+    <link rel="stylesheet" href="../scss/charm.css" />
   </head>
   <body>
-    <!-- the responsive navbar-->
-    <h1 class="bg-lime-400 text-center inline-block p-10 absolute top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2 rounded-lg text-3xl border-4 border-sky-500">ahmed Hussein</h1>
+    <!-- results summary-->
+    <div
+      id="RS-container"
+      class="absolute left-1/2 top-1/2 z-30 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-3xl bg-slate-500">
+      <div id="R-container"></div>
+      <div id="S-container"></div>
+    </div>
+
     <!-- the background animation-->
     <canvas></canvas>
     <script src="../deep.js"></script>
-    <!-- ionicons--><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- ionicons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

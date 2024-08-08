@@ -1,22 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100dvh;
-    width: 100dvw;
-    background-color: tomato;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Comic Sans MS";
+  height: 100dvh;
+  width: 100dvw;
+  background-color: tomato;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS";
 
-    canvas {
-        color: white;
-        background-color: #282828;
-        position: fixed;
-    }
+  canvas {
+    color: white;
+    background-color: #282828;
+    position: fixed;
+  }
 }
