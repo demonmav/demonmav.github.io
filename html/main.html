@@ -9,11 +9,25 @@
   </head>
   <body>
     <!-- results summary-->
-    <div
-      id="RS-container"
-      class="absolute left-1/2 top-1/2 z-30 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-3xl bg-slate-500">
-      <div id="R-container"></div>
-      <div id="S-container"></div>
+    <div id="RS-higher-container" class="rounded-3xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+
+      <div id="RS-container" class="rounded-3xl flex bg-white">
+
+        <div id="R-container" class="flex flex-col justify-around items-center rounded-3xl w-[12.5cm] h-[20cm] bg-[#ffb703]">
+          <h1 id="results-heading" class="text-white text-[2.5rem]">Your Result</h1>
+          <div id="result-number-container"  class="text-white text-[9rem] flex justify-center items-center bg-gradient-to-b from-cyan-500 to-blue-500 rounded-full w-[8cm] h-[8cm]">85</div>
+          <h2 id="rating-heading" class="text-white text-[2.5rem]">Great</h2>
+          <p id="rating-paragraph" class="text-center text-white text-[1rem] w-[10cm]">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+
+        <div id="S-container" class="rounded-3xl w-[12.5cm] h-[20cm] bg-white">
+          
+        </div>
+
+      </div>
+
     </div>
 
     <!-- the background animation-->
