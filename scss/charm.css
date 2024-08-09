@@ -18,4 +18,16 @@ body canvas {
   color: white;
   background-color: #282828;
   position: fixed;
+}
+
+#summary-button {
+  transition-duration: 1300ms;
+  transition-property: all;
+  transition-timing-function: linear;
+  border-radius: 1.3rem;
+  transition: all 1s linear;
+}
+
+#summary-button:hover {
+  background-color: lime;
 }/*# sourceMappingURL=charm.css.map */
