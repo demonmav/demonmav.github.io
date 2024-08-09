@@ -14,16 +14,62 @@
       <div id="RS-container" class="rounded-3xl flex bg-white">
 
         <div id="R-container" class="flex flex-col justify-around items-center rounded-3xl w-[12.5cm] h-[20cm] bg-[#ffb703]">
-          <h1 id="results-heading" class="text-white text-[2.5rem]">Your Result</h1>
-          <div id="result-number-container"  class="text-white text-[9rem] flex justify-center items-center bg-gradient-to-b from-cyan-500 to-blue-500 rounded-full w-[8cm] h-[8cm]">85</div>
-          <h2 id="rating-heading" class="text-white text-[2.5rem]">Great</h2>
-          <p id="rating-paragraph" class="text-center text-white text-[1rem] w-[10cm]">
+          <h1 id="overall-results-heading" class="text-white text-[2.5rem]">Your Result</h1>
+          <div id="overall-result-number-container"  class="text-white text-[9rem] flex justify-center items-center bg-gradient-to-b from-cyan-500 to-blue-500 rounded-full w-[8cm] h-[8cm]">85</div>
+          <h2 id="overall-rating-heading" class="text-white text-[2.5rem]">Great</h2>
+          <p id="overall-rating-paragraph" class="text-center text-white text-[1rem] w-[10cm]">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
 
-        <div id="S-container" class="rounded-3xl w-[12.5cm] h-[20cm] bg-white">
-          
+        <div id="S-container" class="flex flex-col justify-around items-center rounded-3xl w-[12.5cm] h-[20cm] bg-white">
+          <h1 id="summary-heading" class="text-[2.5rem] text-slate-900">summary</h1>
+
+          <div id="reaction" class="w-[10cm] h-[1.5cm] flex justify-between bg-red-400 p-8 rounded-xl mx-8 items-center">
+            <div id="rating_title" class="flex items-center">
+              <ion-icon name="add-circle-outline" class="mr-3"></ion-icon>
+              <span>Reaction</span>
+            </div>
+            <div id="rating">
+              <span>80 </span>            
+              <span>/ 100</span>    
+            </div>        
+          </div>
+
+          <div id="memory"class="w-[10cm] h-[1.5cm] flex justify-between bg-red-400 p-8 rounded-xl mx-8 items-center">
+            <div id="rating_title" class="flex items-center">
+              <ion-icon name="at-circle-outline" class="mr-3"></ion-icon>
+              <span>Memory</span>
+            </div>
+            <div id="rating">
+              <span>92 </span>            
+              <span>/ 100</span>    
+            </div>        
+          </div>
+
+          <div id="verbal" class="w-[10cm] h-[1.5cm] flex justify-between bg-red-400 p-8 rounded-xl mx-8 items-center">
+            <div id="rating_title" class="flex items-center">
+              <ion-icon name="caret-up-circle-outline" class="mr-3"></ion-icon>
+              <span>Verbal</span>
+            </div>
+            <div id="rating">
+              <span>61 </span>            
+              <span>/ 100</span>    
+            </div>        
+          </div>
+
+          <div id="visual" class="w-[10cm] h-[1.5cm] flex justify-between bg-red-400 p-8 rounded-xl mx-8 items-center">
+            <div id="rating_title" class="flex items-center">
+              <ion-icon name="chevron-up-circle-outline" class="mr-3"></ion-icon>
+              <span>Visual</span>
+            </div>
+            <div id="rating">
+              <span>72 </span>            
+              <span>/ 100</span>    
+            </div>        
+          </div>
+
+          <button class="bg-cyan-400 w-[8cm] h-[1.5cm] rounded-3xl">Continue</button>
         </div>
 
       </div>
