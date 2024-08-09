@@ -8,7 +8,7 @@ body {
   height: 100dvh;
   width: 100dvw;
   background-color: tomato;
-  overflow: hidden;
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,15 +31,4 @@ body {
 
 #summary-button:hover {
   background-color: lime;
-}
-
-@media only screen and (max-width: 980px) {
-  #RS-container {
-    flex-direction: column;
-    height: 100dvh;
-  }
-
-  #overall-rating-paragraph {
-    padding: 1rem;
-  }
 }
