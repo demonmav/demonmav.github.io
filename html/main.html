@@ -1,132 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1.0" />
-    <title>Github</title>
-    <link rel="stylesheet" href="../src/charm_out.css" />
-    <link rel="stylesheet" href="../scss/charm.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-sclae=1.0">
+    <title>multi step mobile form</title>
+    <link rel="stylesheet" href="../scss/charm.css">
   </head>
   <body>
-    <!-- results summary-->
-    <div
-      id="RS-higher-container"
-      class="absolute left-1/2 top-1/2 z-30 -translate-x-1/2 -translate-y-1/2 rounded-3xl w-[25cm] h-[20cm]"
-    >
-      <div id="RS-container" class="flex rounded-3xl bg-white">
-        <div
-          id="R-container"
-          class="flex h-[20cm] w-[12.5cm] flex-col items-center justify-around bg-[#ffb703]"
-        >
-          <h1 id="overall-results-heading" class="text-[2.5rem] text-white">
-            Your Result
-          </h1>
-          <div
-            id="overall-result-number-container"
-            class="flex h-[8cm] w-[8cm] items-center justify-center rounded-full bg-gradient-to-b from-cyan-500 to-blue-500 text-[9rem] text-white"
-          >
-            85
-          </div>
-          <h2 id="overall-rating-heading" class="text-[2.5rem] text-white">
-            Great
-          </h2>
-          <p
-            id="overall-rating-paragraph"
-            class="w-[10cm] text-center text-[1rem] text-white"
-          >
-            You scored higher than 65% of the people who have taken these tests.
-          </p>
-        </div>
-
-        <div
-          id="S-container"
-          class="flex h-[20cm] w-[12.5cm] flex-col items-center justify-around bg-white"
-        >
-          <h1 id="summary-heading" class="text-[2.5rem] text-slate-900">
-            summary
-          </h1>
-
-          <div
-            id="reaction"
-            class="mx-8 flex h-[1.5cm] w-[10cm] items-center justify-between rounded-xl bg-red-400 p-5"
-          >
-            <div id="rating_title" class="flex items-center">
-              <ion-icon name="add-circle-outline" class="mr-3"></ion-icon>
-              <span>Reaction</span>
-            </div>
-            <div id="rating">
-              <span>80 </span>
-              <span>/ 100</span>
-            </div>
-          </div>
-
-          <div
-            id="memory"
-            class="mx-8 flex h-[1.5cm] w-[10cm] items-center justify-between rounded-xl bg-red-400 p-5"
-          >
-            <div id="rating_title" class="flex items-center">
-              <ion-icon name="at-circle-outline" class="mr-3"></ion-icon>
-              <span>Memory</span>
-            </div>
-            <div id="rating">
-              <span>92 </span>
-              <span>/ 100</span>
-            </div>
-          </div>
-
-          <div
-            id="verbal"
-            class="mx-8 flex h-[1.5cm] w-[10cm] items-center justify-between rounded-xl bg-red-400 p-5"
-          >
-            <div id="rating_title" class="flex items-center">
-              <ion-icon name="caret-up-circle-outline" class="mr-3"></ion-icon>
-              <span>Verbal</span>
-            </div>
-            <div id="rating">
-              <span>61 </span>
-              <span>/ 100</span>
-            </div>
-          </div>
-
-          <div
-            id="visual"
-            class="mx-8 flex h-[1.5cm] w-[10cm] items-center justify-between rounded-xl bg-red-400 p-5"
-          >
-            <div id="rating_title" class="flex items-center">
-              <ion-icon
-                name="chevron-up-circle-outline"
-                class="mr-3"
-              ></ion-icon>
-              <span>Visual</span>
-            </div>
-            <div id="rating">
-              <span>72 </span>
-              <span>/ 100</span>
-            </div>
-          </div>
-
-          <button
-            id="summary-button"
-            class="h-[1.5cm] w-[8cm] rounded-3xl bg-cyan-400"
-          >
-            Continue
-          </button>
-        </div>
+    <div class="the-container">
+      <div class="position">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
       </div>
+      <div class="personal-info">
+        <h1>Personal info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+        <form>
+          <div class="name">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Stephen King">
+          </div>
+          <div class="email">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com">
+          </div>
+          <div class="phone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890">
+          </div>
+        </form>
+      </div>
+      <button>Next Step</button>
     </div>
-
-    <!-- the background animation-->
+    <!-- this is a separator-->
     <canvas></canvas>
     <script src="../deep.js"></script>
-
-    <!-- ionicons-->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>

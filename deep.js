@@ -173,8 +173,8 @@ for (let i = 0; i < 20; i++) {
   dx = 8;
   dy = 8;
   radius = 30;
-  color = "tomato";
-  mass = 10;
+  color = "lime";
+  mass = 30;
 
   // keep circles apart and i don't have an idea about this yet !!
   // before you push a circles with all its prop, do that
