@@ -32,3 +32,14 @@ body {
 #summary-button:hover {
   background-color: lime;
 }
+
+@media only screen and (max-width: 980px) {
+  #RS-container {
+    flex-direction: column;
+    height: 100dvh;
+  }
+
+  #overall-rating-paragraph {
+    padding: 1rem;
+  }
+}
