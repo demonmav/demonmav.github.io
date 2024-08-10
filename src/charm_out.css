@@ -553,15 +553,3 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-
-.absolute {
-  position: absolute;
-}
-
-.z-30 {
-  z-index: 30;
-}
-
-.-z-30 {
-  z-index: -30;
-}

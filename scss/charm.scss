@@ -17,6 +17,8 @@ body {
   // ---------- the mutli step form but mobile first ---------
   .the-container {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 30;
     width: 360px;
     display: flex;
