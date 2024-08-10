@@ -8,7 +8,6 @@ body {
   height: 100dvh;
   width: 100dvw;
   background-color: tomato;
-  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,9 +25,17 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100dvh;
+    background-color: transparent;
+    background-image: url("../images/texture_one_Two.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
     .position {
-      background-color: coral;
+      background-color: rgb(255, 49, 90);
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      margin-bottom: 2rem;
 
       ul {
         display: flex;
@@ -47,12 +54,17 @@ body {
           margin: 1rem;
         }
       }
+
+      ul li:first-child {
+        background-color: whitesmoke;
+      }
     }
 
     .personal-info {
       background-color: whitesmoke;
       padding: 1.5rem;
       margin: 0.5rem;
+      border-radius: 1.5rem;
 
       h1 {
         margin-bottom: 0.7rem;
@@ -92,11 +104,11 @@ body {
       outline: none;
       border: none;
       padding: 1rem;
-      background-color: cadetblue;
+      background-color: black;
       color: whitesmoke;
       border-radius: 1rem;
       position: absolute;
-      bottom: 2rem;
+      bottom: 8rem;
       right: 2rem;
     }
   }

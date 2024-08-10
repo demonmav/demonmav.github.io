@@ -24,9 +24,17 @@ body .the-container {
   justify-content: flex-start;
   align-items: center;
   height: 100dvh;
+  background-color: transparent;
+  background-image: url("../images/texture_one_Two.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 body .the-container .position {
-  background-color: coral;
+  background-color: rgb(255, 49, 90);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  margin-bottom: 2rem;
 }
 body .the-container .position ul {
   display: flex;
@@ -44,10 +52,14 @@ body .the-container .position ul li {
   align-items: center;
   margin: 1rem;
 }
+body .the-container .position ul li:first-child {
+  background-color: whitesmoke;
+}
 body .the-container .personal-info {
   background-color: whitesmoke;
   padding: 1.5rem;
   margin: 0.5rem;
+  border-radius: 1.5rem;
 }
 body .the-container .personal-info h1 {
   margin-bottom: 0.7rem;
@@ -73,11 +85,11 @@ body .the-container button {
   outline: none;
   border: none;
   padding: 1rem;
-  background-color: cadetblue;
+  background-color: black;
   color: whitesmoke;
   border-radius: 1rem;
   position: absolute;
-  bottom: 2rem;
+  bottom: 8rem;
   right: 2rem;
 }
 body canvas {

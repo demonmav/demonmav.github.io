@@ -173,7 +173,7 @@ for (let i = 0; i < 20; i++) {
   dx = 8;
   dy = 8;
   radius = 30;
-  color = "lime";
+  color = "crimson";
   mass = 30;
 
   // keep circles apart and i don't have an idea about this yet !!
